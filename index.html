@@ -1,0 +1,62 @@
+<html>
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Twitch Stream Viewer</title>
+
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+		<!-- Google Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+		<!-- Stylesheet -->
+		<link rel="stylesheet" href="css/stylesheet.css">
+
+		<!-- App scripts -->
+		<script src="js/script.js" type="text/javascript"></script>
+		<script src="js/button-events.js" type="text/javascript"></script>
+
+	</head>
+
+	<body>
+
+		<!-- Page Logo -->
+		<div id="page-logo">
+			<img src="http://s.jtvnw.net/jtv_user_pictures/hosted_images/Twitch_BlackLogo.png">
+		</div>
+
+		<!-- Project Title -->
+		<div id="project-title">
+			<h3>Twitch JSON API Demo</h3>
+		</div>
+
+		<!-- Filter Buttons -->
+		<div id="btn-array">
+			<button class="btn btn-custom" id="btn-channel-all">Show All</button>
+			<button class="btn btn-custom" id="btn-channel-online">Online</button>
+			<button class="btn btn-custom" id="btn-channel-offline">Offline</button>
+			<button class="btn btn-custom" id="btn-channel-closed">Closed</button>
+		</div>
+
+		<!-- Streams -->
+		<div class="container-fluid" id="main-container"></div>
+
+		<!-- Footer -->
+		<div id="footer">
+			Copyright &copy; 2016 <a href="http://www.jonbalon.io" target="_blank">Jon Balon</a>. All Rights Reserved.<br/>
+			All Twitch assets and branding remain property of <a href="https://www.twitch.tv" target="_blank">Twitch</a>.
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,109 @@
+
+body {
+  background-color: white;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  color: #333333;
+}
+
+.channel-link, .channel-link:link, .channel-link:visited, .channel-link:hover, .channel-link:active {
+  color: white;
+  text-decoration: none;
+}
+
+ #project-title {
+   text-align: center;
+ }
+
+#footer {
+  margin-top: 50px;
+  min-width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+
+/*
+ *
+ *
+ * Buttons
+ *
+ *
+ */
+#btn-array {
+  text-align: center;
+  margin: 15px;
+}
+
+.btn-custom, .btn-unselected {
+  background-color: #6441A5;
+  border-radius: 0;
+  color: white;
+}
+
+.btn-custom:hover, .btn-selected {
+  background-color: #3B2064;
+  color: white;
+}
+
+.btn-custom:link, .btn-custom:focus, .btn-custom:active {
+  color: white;
+}
+
+/*
+ *
+ *
+ * Twitch logo
+ *
+ *
+ */
+#page-logo > img {
+  width: 50%;
+  margin: 50 auto;
+  display: block;
+}
+
+/*
+ *
+ *
+ * Streams
+ *
+ *
+ */
+.stream-panel:hover {
+  background-color: #3B2064;
+  border: solid 5px #3B2064;
+}
+
+.stream-panel {
+  padding: 0;
+  background-color: #333333;
+  margin: 0;
+  border: solid 5px white;
+}
+
+.stream-preview > img {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+}
+
+.stream-game {
+  text-align: center;
+  font-size: 20px;
+}
+
+.channel-info {
+  width: 100%;
+  font-size: 20px;
+}
+
+.channel-photo {
+  height: 5%;
+  /*border-radius: 50%;*/
+}
+
+.channel-name {
+  text-align: center;
+}
