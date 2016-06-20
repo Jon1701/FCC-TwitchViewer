@@ -48,6 +48,14 @@ gulp.task("components", function() {
   gulp.src(modulesPath + "jquery/dist/jquery.js")
     .pipe(gulp.dest(destPath + "components/jquery/"));
 
+  // React.
+  gulp.src(modulesPath + "react/dist/react.js")
+    .pipe(gulp.dest(destPath + "components/react/"));
+
+  // React-DOM.
+  gulp.src(modulesPath + "react-dom/dist/react-dom.js")
+    .pipe(gulp.dest(destPath + "components/react/"));
+
 });
 
 // Webserver.
