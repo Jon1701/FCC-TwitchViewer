@@ -1,0 +1,68 @@
+////////////////////////////////////////////////////////////////////////////////
+// Colours
+////////////////////////////////////////////////////////////////////////////////
+$colour-twitch-purple: #6441A5;
+$colour-twitch-lightpurple: #B9A3E3;
+$colour-twitch-darkgrey: #262626;
+$colour-twitch-lightgrey: #F1F1F1;
+
+////////////////////////////////////////////////////////////////////////////////
+// Tabs for All, Online, Offline sections
+////////////////////////////////////////////////////////////////////////////////
+
+// Colours.
+$colour-tab-bg: $colour-twitch-purple;
+$colour-tab-bg-hover: $colour-twitch-darkgrey;
+$colour-tab-text: white;
+
+#container-tabs {
+
+  // Tabs
+  .tab {
+    display: inline-block;
+    background-color: $colour-tab-bg;
+    color: $colour-tab-text;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    &:hover {
+      background-color: $colour-tab-bg-hover;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Container showing list of streamers
+////////////////////////////////////////////////////////////////////////////////
+
+// Colours.
+$colour-stream-tbl-bg: $colour-twitch-lightgrey;
+
+#tbl-streams {
+
+  // Table width.
+  width: 100%;
+
+  // Table background.
+  background-color: $colour-stream-tbl-bg;
+
+  // Stream Image Container.
+  .stream-image {
+
+    // Stream Image Container is at most 25% of table width.
+    max-width: 25%;
+
+    // Stream Image fills its parent container,
+    // maximizes image width.
+    img { max-width: 100%; };
+  }
+
+  // Stream Info Container.
+  .stream-info { max-width: 80%; };
+
+
+}
