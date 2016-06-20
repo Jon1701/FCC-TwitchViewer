@@ -76,4 +76,4 @@ gulp.task("watch", function() {
 ////////////////////////////////////////////////////////////////////////////////
 // Default Task.
 ////////////////////////////////////////////////////////////////////////////////
-gulp.task("default", ["images", "javascript", "stylesheets", "html", "components", "webserver"]);
+gulp.task("default", ["watch", "images", "javascript", "stylesheets", "html", "components", "webserver"]);
