@@ -1,0 +1,25 @@
+{
+  "name": "twitch-viewer",
+  "version": "2.0.0",
+  "description": "\"# TwitchViewer\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jon1701/TwitchViewer.git"
+  },
+  "author": "Jon1701",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jon1701/TwitchViewer/issues"
+  },
+  "homepage": "https://github.com/Jon1701/TwitchViewer#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-webserver": "^0.9.1",
+    "jquery": "^2.2.4"
+  }
+}
