@@ -11,6 +11,8 @@
 		<script type="text/javascript" src="components/react/react-dom.js"></script>
 		<script type="text/javascript" src="components/react/babel.js"></script>
 
+		<!-- Application Script -->
+		<script type="text/javascript" src="javascript/twitch-stream-extractor.js"></script>
 
 		<!-- Application Stylesheet -->
 		<link rel="stylesheet" href="stylesheets/stylesheet.css"/>
@@ -49,7 +51,16 @@
 		<!-- React Template -->
 		<script type="text/babel">
 
-			ReactDOM.render(<h1>Hello World</h1>, document.getElementById("target"));
+			// Create Stream component.
+			var Stream = React.createClass({
+				render: function() {
+					return (
+						<h1>Stream Component</h1>
+					)
+				}
+			});
+
+			ReactDOM.render(<Stream />, document.getElementById("target"));
 
 		</script>
 		<!-- End React Template -->
