@@ -52,9 +52,9 @@ $colour-stream-tbl-bg: $colour-twitch-lightgrey;
 
   // Stream Image Container.
   .stream-image {
-
+    width: 30%;
     // Stream Image Container is at most 25% of table width.
-    max-width: 25%;
+
 
     // Stream Image fills its parent container,
     // maximizes image width.
@@ -62,7 +62,10 @@ $colour-stream-tbl-bg: $colour-twitch-lightgrey;
   }
 
   // Stream Info Container.
-  .stream-info { max-width: 80%; };
+  .stream-info {
+    max-width: 70%;
+    text-align: center;
+  };
 
 
 }
