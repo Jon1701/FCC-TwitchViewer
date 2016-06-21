@@ -56,6 +56,10 @@ gulp.task("components", function() {
   gulp.src(modulesPath + "react-dom/dist/react-dom.js")
     .pipe(gulp.dest(destPath + "components/react/"));
 
+  // Babel.
+  gulp.src(srcPath + "components/react/babel.js")
+    .pipe(gulp.dest(destPath + "components/react/"));
+
 });
 
 // Webserver.
