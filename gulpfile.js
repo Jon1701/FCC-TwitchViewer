@@ -44,10 +44,6 @@ gulp.task("html", function() {
 // Move Components.
 gulp.task("components", function() {
 
-  // jQuery.
-  gulp.src(modulesPath + "jquery/dist/jquery.js")
-    .pipe(gulp.dest(destPath + "components/jquery/"));
-
   // React.
   gulp.src(modulesPath + "react/dist/react.js")
     .pipe(gulp.dest(destPath + "components/react/"));
