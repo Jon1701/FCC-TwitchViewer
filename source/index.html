@@ -27,18 +27,30 @@
 				<div id="tab-offline" class="tab">Offline</div>
 			</div>
 
+			<div id="target"></div>
+
 			<!-- Stream Table -->
 			<table id="tbl-streams">
 				<tbody>
+					<!--
 					<tr class="row-stream">
 						<td class="stream-image"><img src="images/placeholders/avatar.png"/></td>
 						<td class="stream-info">Enim dolore magna quis quis proident ullamco deserunt aliqua adipisicing sint culpa anim cupidatat laboris irure ut fugiat.</td>
 					</tr>
+					-->
 				</tbody>
 			</table>
 
 		</div>
 		<!-- End Container -->
+
+		<!-- React Template -->
+		<script type="text/babel">
+
+			ReactDOM.render(<h1>Hello World</h1>, document.getElementById("target"));
+
+		</script>
+		<!-- End React Template -->
 
 
 	</body>
