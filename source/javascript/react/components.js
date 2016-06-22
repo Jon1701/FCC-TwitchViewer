@@ -75,7 +75,7 @@ var getStreamInfoAndUpdateState = function(thisComponent, filterHow) {
       // missing object properties.
       data["stream"] = {
         channel: {
-          logo: "../../images/placeholders/avatar.png",
+          logo: "../../images/logos/GlitchIcon_WhiteonPurple.png",
           display_name: displayName,
           game: "User is Offline",
           url: "https://www.twitch.tv/" + displayName
@@ -147,28 +147,37 @@ var getStreamInfoAndUpdateState = function(thisComponent, filterHow) {
 ////////////////////////////////////////////////////////////////////////////////
 
 var StreamTable = React.createClass({
+
+  // Component Initial State.
   getInitialState: function() {
     return {
-      //usernames: ["brunofin", "eleaguetv", "supermcgamer", "the_pixxel", "ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"],
-      usernames: ["http://www.google.com","brunofin","eleaguetv"],
+      usernames: ["Annchirisu", "brunofin", "eleaguetv", "supermcgamer", "ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"],
+      //usernames: ["freecodecamp", "Annchirisu", "GreenManGaming", "the_Pixxel", "SovietWomble"],
       streamInfo: []
     }
   },
 
+  // Reload stream info and store all users in state.
   reloadStreamInfo: function() {
     getStreamInfoAndUpdateState(this, "all");
   },
+
+  // Reload stream info and store only online users in state.
   filterOnlineStreamInfo: function() {
     getStreamInfoAndUpdateState(this, "online");
   },
+
+  // Reload stream info and store only offline users in state.
   filterOfflineStreamInfo: function() {
     getStreamInfoAndUpdateState(this, "offline");
   },
 
+  // When the component loads, load stream info and store all users in state.
   componentDidMount: function() {
     getStreamInfoAndUpdateState(this, "all");
   },
 
+  // Render the template.
   render: function() {
     return (
       <div className="container">
@@ -205,26 +214,23 @@ var StreamTabs = React.createClass({
 // List component which shows all the streams.
 var StreamList = React.createClass({
 
+  // Render the template.
   render: function() {
 
+    // Format each row.
     var rows = this.props.streamInfo.map(function(item, index, arr) {
       return (
-
-          <tr className="row-stream" key={index}>
-
-            <td className="stream-image">
-              <a href={item.stream.channel.url} target="_blank">
-                <img src={item.stream.channel.logo}/>
-              </a>
-            </td>
-
-            <td className="stream-info">
+        <tr className="row-stream" key={index}>
+          <td className="stream-image">
+            <a href={item.stream.channel.url} target="_blank">
+              <img src={item.stream.channel.logo}/>
+            </a>
+          </td>
+          <td className="stream-info">
             {item.stream.channel.display_name}<br/>
-            {item.stream.channel.game}
-            </td>
-
-          </tr>
-
+            <em>{item.stream.channel.game}</em>
+          </td>
+        </tr>
       )
     });
 
@@ -235,8 +241,8 @@ var StreamList = React.createClass({
         </tbody>
       </table>
     )
-  }
+  }// end render().
 });
 
-
+// Add Component to DOM.
 ReactDOM.render(<StreamTable/>, document.getElementById("react-target"));

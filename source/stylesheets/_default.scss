@@ -1,0 +1,85 @@
+
+////////////////////////////////////////////////////////////////////////////////
+// Application Container
+////////////////////////////////////////////////////////////////////////////////
+#container-application {
+  width: 90%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Twitch Logo
+////////////////////////////////////////////////////////////////////////////////
+#container-logo {
+  max-width: 100%;
+  text-align: center;
+
+  img { width: 35%; };
+  margin: 20px;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Tabs
+////////////////////////////////////////////////////////////////////////////////
+#container-tabs {
+
+  margin-top: 5px;
+
+  // Tabs
+  .tab {
+    display: inline-block;
+    background-color: $colour-tab-bg;
+    color: $colour-tab-text;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+
+    font-size: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+    &:hover { background-color: $colour-tab-bg-hover; };
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// List of Streams
+////////////////////////////////////////////////////////////////////////////////
+
+// Colours.
+$colour-stream-tbl-bg: $colour-twitch-lightgrey;
+
+#tbl-streams {
+
+  // Table width.
+  width: 100%;
+
+  // Table background.
+  background-color: $colour-twitch-purple;
+
+  // Stream Image Container.
+  .stream-image {
+    background-color: $colour-twitch-purple;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    // Stream Image Container is at most 25% of table width.
+
+    // Stream Image fills its parent container,
+    // maximizes image width.
+    img { max-width: 100%; };
+  }
+
+  // Stream Info Container.
+  .stream-info {
+    max-width: 70%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.75em;
+    background-color: white;
+  };
+
+}
