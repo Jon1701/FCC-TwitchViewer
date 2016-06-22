@@ -3,7 +3,7 @@
 // Application Container
 ////////////////////////////////////////////////////////////////////////////////
 #container-application {
-  width: 90%;
+  width: 800px;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -36,8 +36,8 @@
     text-align: center;
 
     font-size: 1.5em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
 
     &:hover { background-color: $colour-tab-bg-hover; };
   }
@@ -55,17 +55,12 @@ $colour-stream-tbl-bg: $colour-twitch-lightgrey;
   // Table width.
   width: 100%;
 
-  // Table background.
-  background-color: $colour-twitch-purple;
-
   // Stream Image Container.
   .stream-image {
-    background-color: $colour-twitch-purple;
-    width: 20%;
+    width: 15%;
     margin: 0;
     padding: 0;
-    border: 0;
-    // Stream Image Container is at most 25% of table width.
+
 
     // Stream Image fills its parent container,
     // maximizes image width.
@@ -74,12 +69,15 @@ $colour-stream-tbl-bg: $colour-twitch-lightgrey;
 
   // Stream Info Container.
   .stream-info {
-    max-width: 70%;
+    //max-width: 80%;
     margin: 0;
     padding: 0;
     text-align: center;
     font-size: 1.75em;
     background-color: white;
+    border-bottom: solid 1px $colour-twitch-purple;
+
+
   };
 
 }
