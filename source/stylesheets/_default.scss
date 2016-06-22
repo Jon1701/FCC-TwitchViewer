@@ -77,6 +77,16 @@ $colour-stream-tbl-bg: $colour-twitch-lightgrey;
     background-color: white;
     border-bottom: solid 1px $colour-twitch-purple;
 
+    a {
+      text-decoration: none;
+      &:focus { color: $colour-twitch-darkgrey; };
+      &:link { color: $colour-twitch-darkgrey; };
+      &:visited { color: $colour-twitch-darkgrey; };
+      &:hover { color: $colour-twitch-purple; };
+
+      em { font-size: 0.6em; };
+    }
+
 
   };
 
