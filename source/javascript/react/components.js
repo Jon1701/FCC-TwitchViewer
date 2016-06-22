@@ -37,7 +37,7 @@ var getStreamInfoAndUpdateState = function(thisComponent, filterHow) {
       var data = {
         stream: {
           channel: {
-            logo: "../../images/placeholders/avatar.png",
+            logo: "../../images/logos/GlitchIcon_PurpleonWhite.png",
             display_name: displayName,
             game: customMessage,
             url: "https://www.twitch.tv/" + displayName
