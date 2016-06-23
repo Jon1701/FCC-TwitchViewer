@@ -37,7 +37,7 @@ var getStreamInfoAndUpdateState = function(thisComponent, filterHow) {
       var data = {
         stream: {
           channel: {
-            logo: "../../images/logos/GlitchIcon_PurpleonWhite.png",
+            logo: "./images/logos/GlitchIcon_PurpleonWhite.png",
             display_name: displayName,
             game: customMessage,
             url: "https://www.twitch.tv/" + displayName
@@ -75,7 +75,7 @@ var getStreamInfoAndUpdateState = function(thisComponent, filterHow) {
       // missing object properties.
       data["stream"] = {
         channel: {
-          logo: "../../images/logos/GlitchIcon_WhiteonPurple.png",
+          logo: "./images/logos/GlitchIcon_WhiteonPurple.png",
           display_name: displayName,
           game: "User is Offline",
           url: "https://www.twitch.tv/" + displayName
