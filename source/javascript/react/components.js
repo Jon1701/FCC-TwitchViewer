@@ -151,8 +151,7 @@ var StreamTable = React.createClass({
   // Component Initial State.
   getInitialState: function() {
     return {
-      usernames: ["Annchirisu", "brunofin", "eleaguetv", "supermcgamer", "ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"],
-      //usernames: ["freecodecamp", "Annchirisu", "GreenManGaming", "the_Pixxel", "SovietWomble"],
+      usernames: ["GreenManGaming", "the_Pixxel", "SovietWomble", "Annchirisu", "brunofin", "eleaguetv", "supermcgamer", "ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"],
       streamInfo: []
     }
   },
