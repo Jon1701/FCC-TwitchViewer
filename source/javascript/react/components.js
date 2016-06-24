@@ -179,7 +179,7 @@ var StreamTable = React.createClass({
   // Render the template.
   render: function() {
     return (
-      <div className="container">
+      <div>
         <div id="container-tabs">
           <StreamTabs id="tab-all" text="All" clickEvent={this.reloadStreamInfo}/>
           <StreamTabs id="tab-online" text="Online" clickEvent={this.filterOnlineStreamInfo}/>

@@ -77,6 +77,7 @@ $colour-lightgrey: #F1F1F1;
 
   // Table width.
   width: 100%;
+  border: solid 1px $colour-purple;
 
   // Spacing.
   border-spacing: 0px;
@@ -89,13 +90,11 @@ $colour-lightgrey: #F1F1F1;
 
     // Border.
     border-bottom: solid 1px $colour-purple;
-    border-left: solid 1px $colour-purple;
     border-right: solid 1px $colour-purple;
 
     background-color: $colour-purple;
 
-    // Stream Image fills its parent container,
-    // maximizes image width.
+    // Stream Image fills its parent container, maximizes image width.
     img { max-width: 100%; };
   }
 
@@ -109,8 +108,7 @@ $colour-lightgrey: #F1F1F1;
     background-color: white;
 
     // Border.
-    border-bottom: solid 1px $colour-purple;
-    border-right: solid 1px $colour-purple;
+    border-top: solid 1px $colour-purple;
 
     a {
       text-decoration: none;
