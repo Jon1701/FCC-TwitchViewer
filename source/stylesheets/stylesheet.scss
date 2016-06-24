@@ -3,7 +3,115 @@ body {
   font-size: 100%;
 }
 
-// Import fonts and colours.
-@import "_fonts-colours";
-@import "_default";
-//@import "_landscape";
+////////////////////////////////////////////////////////////////////////////////
+// Colours
+////////////////////////////////////////////////////////////////////////////////
+$colour-lightpurple: #B9A3E3;
+$colour-purple: #6441A5;
+$colour-darkpurple: #3B2064;
+$colour-darkgrey: #262626;
+$colour-lightgrey: #F1F1F1;
+
+////////////////////////////////////////////////////////////////////////////////
+// Application Container
+////////////////////////////////////////////////////////////////////////////////
+#container-application {
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Twitch Logo
+////////////////////////////////////////////////////////////////////////////////
+#container-logo {
+  max-width: 100%;
+  text-align: center;
+
+  img { width: 35%; };
+  margin: 20px;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Tabs
+////////////////////////////////////////////////////////////////////////////////
+#container-tabs {
+
+  margin-top: 5px;
+
+  // Tabs
+  .tab {
+    display: inline-block;
+    background-color: $colour-purple;
+    color: white;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+
+    box-shadow: 0 5px $colour-darkpurple;
+
+    font-size: 1.5em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    margin-bottom: 5px;
+
+    &:hover { background-color: $colour-darkpurple; };
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// List of Streams
+////////////////////////////////////////////////////////////////////////////////
+
+#tbl-streams {
+
+  // Table width.
+  width: 100%;
+
+  // Spacing.
+  border-spacing: 0px;
+
+  // Stream Image Container.
+  .stream-image {
+    width: 15%;
+    margin: 0;
+    padding: 0;
+
+    // Border.
+    border-bottom: solid 1px $colour-purple;
+    border-left: solid 1px $colour-purple;
+    border-right: solid 1px $colour-purple;
+
+    background-color: $colour-purple;
+
+    // Stream Image fills its parent container,
+    // maximizes image width.
+    img { max-width: 100%; };
+  }
+
+  // Stream Info Container.
+  .stream-info {
+
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.75em;
+    background-color: white;
+
+    // Border.
+    border-bottom: solid 1px $colour-purple;
+    border-right: solid 1px $colour-purple;
+
+    a {
+      text-decoration: none;
+      &:focus { color: $colour-darkgrey; };
+      &:link { color: $colour-darkgrey; };
+      &:visited { color: $colour-darkgrey; };
+      &:hover { color: $colour-purple; };
+
+      em { font-size: 0.6em; };
+    }
+
+  };
+
+}
