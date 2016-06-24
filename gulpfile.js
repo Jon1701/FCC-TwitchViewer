@@ -16,6 +16,12 @@ var modulesPath = "node_modules/";
 // Tasks
 ////////////////////////////////////////////////////////////////////////////////
 
+// Move fonts.
+gulp.task("fonts", function() {
+  gulp.src(srcPath + "fonts/**/*")
+    .pipe(gulp.dest(destPath + "fonts/"));
+})
+
 // Move images.
 gulp.task("images", function() {
   gulp.src(srcPath + "images/**/*")
@@ -74,6 +80,7 @@ gulp.task("webserver", function() {
 ////////////////////////////////////////////////////////////////////////////////
 
 gulp.task("watch", function() {
+  gulp.watch(srcPath + "fonts/**/*", ["fonts"]); // Fonts.
   gulp.watch(srcPath + "images/**/*", ["images"]); // Images.
   gulp.watch(srcPath + "javascript/**/*.js", ["javascript"]); // JavaScript.
   gulp.watch(srcPath + "stylesheets/**/_*.scss", ["stylesheets"]); // SASS Partials.
@@ -84,4 +91,4 @@ gulp.task("watch", function() {
 ////////////////////////////////////////////////////////////////////////////////
 // Default Task.
 ////////////////////////////////////////////////////////////////////////////////
-gulp.task("default", ["watch", "images", "javascript", "stylesheets", "html", "components", "webserver"]);
+gulp.task("default", ["fonts", "images", "javascript", "stylesheets", "html", "components", "webserver", "watch"]);
