@@ -226,7 +226,7 @@ var StreamList = React.createClass({
             </a>
           </td>
           <td className="stream-info">
-            <a href="#" target="_blank">
+            <a href={item.stream.channel.url} target="_blank">
               {item.stream.channel.display_name}<br/>
               <em>{item.stream.channel.game}</em>
             </a>
